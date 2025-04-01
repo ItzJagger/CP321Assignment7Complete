@@ -23,7 +23,7 @@ isoMap = {
 }
 championCounts['isoAlpha'] = championCounts['Country'].apply(lambda c: isoMap.get(c, None))
 app = Dash(__name__)
-server = server.app
+server = app.server
 app.layout = html.Div([
     html.H1("FIFA World Cup Finals", style={'textAlign': 'center'}),
     dcc.Tabs([
