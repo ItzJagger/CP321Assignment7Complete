@@ -1,4 +1,4 @@
-import numpy as np
+eimport numpy as np
 import pandas as pd
 import dash
 from dash import Dash, dcc, html, Input, Output
@@ -23,6 +23,7 @@ isoMap = {
 }
 championCounts['isoAlpha'] = championCounts['Country'].apply(lambda c: isoMap.get(c, None))
 app = Dash(__name__)
+server = server.app
 app.layout = html.Div([
     html.H1("FIFA World Cup Finals", style={'textAlign': 'center'}),
     dcc.Tabs([
