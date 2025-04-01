@@ -12,7 +12,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 3,
    "id": "f8a356bf-db79-44a6-8c27-e52ee61fdf9d",
    "metadata": {},
    "outputs": [
@@ -31,7 +31,7 @@
        "        "
       ],
       "text/plain": [
-       "<IPython.lib.display.IFrame at 0x2210bfa4710>"
+       "<IPython.lib.display.IFrame at 0x2210ee2aab0>"
       ]
      },
      "metadata": {},
@@ -64,7 +64,6 @@
     "}\n",
     "championCounts['isoAlpha'] = championCounts['Country'].apply(lambda c: isoMap.get(c, None))\n",
     "app = Dash(__name__)\n",
-    "server = app.server\n",
     "app.layout = html.Div([\n",
     "    html.H1(\"FIFA World Cup Finals\", style={'textAlign': 'center'}),\n",
     "    dcc.Tabs([\n",
